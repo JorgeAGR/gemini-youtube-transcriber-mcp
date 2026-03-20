@@ -4,7 +4,7 @@ Transcribes YouTube videos using the Gemini API, exposed as both a Python librar
 
 ## Why Gemini?
 
-Gemini has native, first-party access to YouTube — it can read and process a YouTube video directly from its URL, with no downloading, no intermediate storage, and no third-party tooling required. You pass a URL, Gemini watches the video, and returns a transcription. This keeps the implementation minimal and the latency low.
+Gemini has native, first-party access to YouTube — it can read and process a YouTube video directly from its URL, with no downloading, no intermediate storage, and no third-party tooling required. You pass a URL, Gemini watches the video (at FPS<1 and low-resolution to save on tokens, as this is an audio-centric task), and returns a transcription. This keeps the implementation minimal and the latency low.
 
 ## Output format
 
