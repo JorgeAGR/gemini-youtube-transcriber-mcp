@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Install mcpb
         run: npm install -g @anthropic-ai/mcpb
 
       - name: Pack extension
-
         run: mcpb pack . gemini-youtube-transcriber-mcp-${{ github.ref_name }}.mcpb
 
       - name: Create GitHub Release
